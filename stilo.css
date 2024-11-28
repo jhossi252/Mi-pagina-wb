@@ -5,14 +5,15 @@
 }
 
 body {
-    background: linear-gradient(rgb(58, 58, 224),rgb(100, 192, 225));
-    margin: 40px;
+    background: linear-gradient(to left, rgb(182, 182, 209),rgb(255, 255, 255));
+    margin: 10px;
+    min-height: 100vh;
 }
 
 
 h1 {
     text-align: center;
-    background: linear-gradient(blue) rgb(201, 196, 196);
+    background: linear-gradient (blue) rgb(201, 196, 196);
     text-shadow: 10px;
 }
 
@@ -60,12 +61,12 @@ a:hover {
     border: rgb(10, 9, 9) 2px solid;
     box-shadow: 5px 5px 5px rgb(23, 11, 11);
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: red;
 }
 
 table {
      border-collapse: collapse;
-     background: white;
+     background:white ;
       width: 100%;
      }
 
@@ -74,5 +75,83 @@ table {
      text-align: left;
      padding: 8px;
      }
+
+     /*estilo de principal HtMl*/
+
+     .header{
+         background: yellow;
+         border-radius: 10px;
+         text-align: center;
+         padding: 1rem;
+         grid-area: "header";
+    
+     }
+
+     .nav{
+        background: cadetblue;
+        border-radius: 5px;
+        text-align: center;
+        grid-area: "nav";
+     }
+
+     .main{
+        background: pink;
+        text-align: center;
+        padding:  1rem;
+        border-radius: 5px;
+        grid-area: "main";
+
+     }
+
+     .aside{
+        background: rgb(90, 58, 90);
+        text-align: center;
+        padding: 1rem;
+        border-radius: 5px;
+        grid-area: "aside";
+
+
+     }
+
+     .footer{
+        background: rgb(146, 213, 146);
+        border-radius: 5px;
+        padding: 1rem;
+        text-align: center;
+        grid-area: "footer";
+    
+     }
+     /*CSS grid*/
+     .page{
+        display: grid;
+        gap: 2px;
+        grid-template: 
+        "header" 100px
+        "nav" 50px
+        "main" auto
+        "inside" 100px
+        "footer" 50px / auto;
+
+     @media (min-width:768){
+        grid-template: 
+        "header header  header " 100px
+        "nav  nav  nav  " 50px
+        "main   main   inside" auto
+        100px
+        "footer  footer  footer " 50px / auto auto 40px;
+     }
+     @media(min-width:  1024px){
+        grid-template: 
+        "header    header   header   header  header " 100px
+        "nav" 50px
+        "main" auto
+        "inside" 100px
+        "footer" 50px / auto;
+
+     }
+    
+    }
+     
+
     
 
