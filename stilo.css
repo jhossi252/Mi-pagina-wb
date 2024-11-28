@@ -12,7 +12,8 @@ body {
 
 h1 {
     text-align: center;
-    background: linear-gradient() rgb(201, 196, 196);
+    background: linear-gradient(blue) rgb(201, 196, 196);
+    text-shadow: 10px;
 }
 
 .perfil {
@@ -28,16 +29,50 @@ h3 {
     color: rgb(255, 0, 21);
 }
 
-input[type ="text"], input[type="email."]{
+input[type ="text"], input[type="email."] {
 min-width: 100px;
 min-height: 30px;
 border-radius:10px;
 border: 2px;
 }
 
-input[type="text"]:hover,input[type="email"]:hover{
-    border: 2px blue solid;
-    box-shadow: 5px orange;
+input[type="text"]:hover, input[type="email"]:hover {
+    border: 5px rgb(2, 2, 13) solid;
+    box-shadow: 5px rgb(255, 208, 0);
 }
+a:hover {
+    text-shadow: 5px 5px 10px;
+}
+.button  {
+   background-color: rgb(72, 254, 0);
+   color: rgb(12, 12, 12);
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;margin: 4px 2px; 
+   cursor: pointer;
+   border-radius: 5px;
+   box-shadow: 2px;
+
+}
+.button:hover{
+    border: rgb(10, 9, 9) 2px solid;
+    box-shadow: 5px 5px 5px rgb(23, 11, 11);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+table {
+     border-collapse: collapse;
+     background: white;
+      width: 100%;
+     }
+
+ td, th {
+     border:  1px solid black;
+     text-align: left;
+     padding: 8px;
+     }
     
 
